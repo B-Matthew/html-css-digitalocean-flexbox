@@ -1,0 +1,43 @@
+/* Regole generali  */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+/* SEZIONE ICONS  */
+
+.icons {
+  text-align: center;
+  background-color: #F3F5F9;
+}
+
+.icons h4 {
+  color: grey;
+  padding: 30px 0;
+}
+
+
+
+.icon-list {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0;
+}
+
+#link-icon {
+  text-decoration: none;
+}
