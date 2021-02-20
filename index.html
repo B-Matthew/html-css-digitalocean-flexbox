@@ -2,26 +2,80 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');</style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
     <title>digitaloceanflexbox</title>
   </head>
   <body>
     <header>
       <nav>
-
+        <div class="centratura">
+          <div class="nav-section">
+            <div class="nav-logo">
+              <img src="img/logo.png" alt="">
+            </div>
+            <div class="nav-bar">
+              <ul>
+                <li><a href="#">Products <span><i class="fas fa-chevron-down"></i></span></a></li>
+                <li><a href="#">Customer</li>
+                <li><a href="#">Community<span><i class="fas fa-chevron-down"></i></span></a></li>
+                <li><a href="#">Pricing</a></li>
+              </ul>
+            </div>
+            <div class="nav-bar">
+              <ul>
+                <li><a href="#">Docs</a></li>
+                <li><a href="#">Support<span><i class="fas fa-chevron-down"></i></span></a></li>
+                <li><a href="#">Login</span></a></li>
+                <li><a id="sign-up" href="#">Sign up</a></li>
+              </ul>
+            </div>
+            <div class="ham">
+              <a href="#"><i class="fas fa-bars"></i></a>
+              <div class="dropdown">
+                <ul>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Customer</li>
+                  <li><a href="#">Community</a></li>
+                  <li><a href="#">Pricing</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
       </nav>
 
       <section class="jumbotron">
-
+        <div class="centratura">
+          <div class="flex-jumbo">
+            <div class="testo-jumbo">
+              <h1>The simplest cloud platform for developers &amp; teams</h1>
+              <p>
+                Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastyucture easy for teams and business, whether you're running one virtual machine or ten thousand.
+              </p>
+            </div>
+            <form class="tabella-login">
+              <h2>Deploy your app in seconds.</h2>
+              <a href="#">Get started now.</a>
+              <input class="log_in" type="email" name="email" placeholder="Email" value="">
+              <input class="log_in" type="password" name="password" placeholder="Password" value="">
+              <input id="submit_login" type="submit" name="submit" value="Create your account">
+              <button id="signing-google" type="button" name="button"><img id="google-icon" src="img/google-icon.png" alt="icon-google">Signing up with Google</button>
+              <div>By signing up you agree to the <a href="#">Terms of service</a>. </div>
+            </form>
+          </div>
+        </div>
       </section>
     </header>
 
     <main>
-        <section class="icons">
-          <div class="container">
-          <h4>INNOVATIVE BUSINESS TRUST DIGITALOCEAN</h4>
+      <!-- SECTION ICONS -->
+      <section class="icons">
+        <div class="centratura">
+          <h4>INNOVATIVE BUSINESS TRUST DIGITALOCEAN</h3>
           <ul class="icon-list">
             <li>
               <img src="img/docker.svg" alt="">
@@ -43,18 +97,64 @@
             </li>
           </ul>
           <a id="link-icon" href="www.facebook.com">View customer stories &#x3e; </a>
-      </div>
+        </div>
+      </section>
+      <!-- SECTION DEPLOY -->
+      <section class="deploy">
+        <div class="centratura">
+          <h2>Deploy your app in seconds.</h2>
+          <p id="p-deploy">
+            Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastyucture easy for teams and business, whether you're running one virtual machine or ten thousand.
+          </p>
+          <div class="deploy-flex">
+            <ul class="deploy-list">
+              <li><a href="#">Deploy</a></li>
+              <li><a href="#">Manage</a></li>
+              <li><a href="#">Secure</a></li>
+              <li><a href="#">Scale</a></li>
+              <li><a href="#">Monitor</a></li>
+            </ul>
+            <div class="deploy-box">
+              <div class="deploy-box-top">
+                <div class="box">
+                  <img src="img/cluster-deploy.svg" alt="">
+                  <h4>Cluster deployments</h4>
+                  <p>Provision multiple Droplets (virtual machines) in seconds with our control panel, CLI, or directly against our API</p>
+                </div>
+                <div class="box">
+                  <img src="img/optimized-compute.svg" alt="">
+                  <h4>Optimized compute types</h4>
+                  <p>Get the compute resources you need with Standard or Optimized Droplets.</p>
+                </div>
+              </div>
+
+              <div class="deploy-box-bot">
+                <div class="box">
+                  <img src="img/one-click.svg" alt="">
+                  <h4>One-click apps</h4>
+                  <p>Skip the install and configuration process with the pre-built open source images supporting Rails, Cassandra, Docker, and more.</p>
+                </div>
+                <div class="box">
+                  <img src="img/global.svg" alt="">
+                  <h4>Global availability</h4>
+                  <p>Deploy to any of our data center regions around the world.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
       </section>
 
 
 
 
 
+      </main>
 
-    </main>
+      <footer>
 
-    <footer>
-
-    </footer>
-  </body>
-</html>
+      </footer>
+    </body>
+    </html>

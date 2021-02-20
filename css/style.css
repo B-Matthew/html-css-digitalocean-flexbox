@@ -14,23 +14,162 @@ ul li {
   list-style-type: none;
 }
 
-.container {
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
+.centratura {
   width: 1170px;
   margin: auto;
+}
+
+/* SEZIONE HEADER */
+
+.nav-section {
+  display: flex;
+  align-items: center;
+  height: 100px;
+  justify-content: space-between;
+  position:
+
+}
+
+.nav-logo img {
+  width: 150px;
+  height: auto;
+}
+
+.nav-bar ul li{
+  display: inline-block;
+  padding: 0 10px;
+}
+
+#sign-up {
+    color: blue;
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 5px;
+    transition: 0.3s;
+  }
+
+#sign-up:hover, #submit_login:hover {
+    background-color: #005EFF;
+    color: white;
+}
+
+.ham {
+    display: none;
+}
+
+.ham i {
+    font-size: 30px;
+    color: #005EFF;
+}
+
+.dropdown li {
+  padding: 15px 15px;;
+}
+
+/* SEZIONE JUMBOTRON  */
+
+.jumbotron {
+  background-image: url("../img/jumbo.svg");
+  background-size: cover;
+}
+
+.flex-jumbo {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.jumbotron h1 {
+    color: white;
+    font-size: 55px;
+}
+
+.jumbotron p {
+    color: white;
+    font-size: 22px;
+}
+
+/* form */
+.testo-jumbo {
+  margin: 40px 0;
+  color: white;
+  width: 45%;
+}
+
+.tabella-login {
+    padding: 25px 0;
+    text-align: center;
+    background-color: white;
+    border-radius: 5px;
+    margin: 40px 0;
+    width: 45%;
+}
+
+#submit_login {
+    width: 90%;
+    background-color: #3385ff;
+    color: white;
+    border-radius: 5px;
+    border: none;
+    padding: 8px 0;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+#signing-google {
+    width: 90%;
+    background-color: transparent;
+    border: 1px solid lightgrey;
+    padding: 6px 0;
+    border-radius: 5px;
+    color: grey;
+    transition: 0.3s;
+    margin-bottom: 10px;
+    position: relative;
+}
+
+#google-icon {
+    width: auto;
+    height: 20px;
+    position: absolute;
+    left: 5px;
+}
+
+.tabella-login .log_in {
+    width: 90%;
+    padding: 10px 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+    margin-bottom: 10px;
+}
+
+.tabella-login> a {
+    font-size: 27px;
+    color: #015FFF;
 }
 /* SEZIONE ICONS  */
 
 .icons {
   text-align: center;
   background-color: #F3F5F9;
+  padding: 30px 0;
+
 }
 
 .icons h4 {
   color: grey;
-  padding: 30px 0;
 }
-
-
 
 .icon-list {
   display: flex;
@@ -38,6 +177,66 @@ ul li {
   padding: 30px 0;
 }
 
-#link-icon {
-  text-decoration: none;
+
+
+/* SECTION DEPLOY */
+
+
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+#p-deploy {
+  font-size: 18px;
+  padding-bottom: 25px;
+  color: grey;
+  text-align: center;
+}
+
+.deploy-flex {
+  display: flex;
+  justify-content: space-around;
+}
+
+.deploy-list li {
+  border-left: 1px solid lightgrey;
+  padding: 10px 5px;
+}
+
+.box {
+  width: 40%;
+}
+
+.deply-list {
+  width: 30%;
+}
+.deploy-box {
+  width: 70%;
+}
+
+.deploy-box-top {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+
+.deploy-box-bot {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+.deploy h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.deploy-box p {
+  color: grey;
 }
